@@ -8,7 +8,9 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
 	ShopBusinessUnitTest.class,
 	ShopControllerTest.class,
-	StockUnitTest.class
+	StockUnitTest.class,
+	BusinessConfigUnitTest.class,
+	SimpleShopApplicationUnitTest.class
 })
 public class StockTestSuite {
 

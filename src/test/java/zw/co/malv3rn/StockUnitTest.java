@@ -29,5 +29,13 @@ public class StockUnitTest {
 		assertEquals(stock.getPrice(),10.50,0);
 		
 	}
+	
+	@Test
+	public void createStockUsingSettersShouldReturnStockItem() {
+		stock.setName("Nyama");
+		stock.setPrice(11.12);
+		assertEquals("stock item name",stock.getName(),"Nyama");
+		assertEquals(stock.getPrice(),11.12,0);
+	}
 
 }
