@@ -1,11 +1,12 @@
 package zw.co.malv3rn;
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -24,8 +25,8 @@ public class StockUnitTest {
 	@Test
 	public void createStockShouldReturnStockItem() {
 		assertNotNull(stock);
-		assertEquals(stock.getName(),"Upfu","Stock Item Name");
-		assertEquals(stock.getPrice(),10.50,"Stock Item price");
+		assertEquals("stock item name",stock.getName(),"Upfu");
+		assertEquals(stock.getPrice(),10.50,0);
 		
 	}
 
